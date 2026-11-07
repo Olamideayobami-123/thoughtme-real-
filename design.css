@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(32, 19, 19);
+    font-family: "Questrial", sans-serif;
+    scrollbar-color: black rgb(47,28,28);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px 20px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    top: 0;
+    left: 0;
+}
+
+.navbar a:hover{
+    text-decoration:underline;
+    color: rgb(248, 192, 33);
+}
+
+.navinfo a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.blog{
+    color: rgb(252, 195, 37);
+    text-decoration: none;
+    padding-right: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.signup{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(224, 49, 49);
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    font-family: "JetBrains Mono", monospace;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: background-color 0.2s ease, outline-color 0.2s ease;
+}
+
+.signup:hover{
+    background-color: rgb(224, 49, 49);
+    outline-color: rgb(224, 49, 49);
+}
+
+.main{
+    color: white;
+    padding: 190px 300px 0px 250px;
+}
+
+.main div{
+    padding-right: 150px;
+}
+
+.main h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 1.08px;
+    color: rgb(98.04% 97.65% 97.65%);
+    margin-bottom: 20px;
+}
+
+.main p{
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 41px;
+    color: rgb(91.76% 90.2% 89.41%);
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+.main a{
+    color: rgb(255, 231, 163);
+    transition: color 0.2s ease-in-out;
+}
+
+.main a:hover{
+    color: rgb(255, 199, 38);
+}
+
+.topics{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.linksnav li{
+    display: inline;
+}
+
+.linksnav a{
+    text-decoration: none;
+    border: 1px solid rgb(78, 65, 62);
+    border-radius: 30px;
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.18px;
+    font-family: "JetBrains Mono", monospace;
+    color: rgb(91.76% 90.2% 89.41%);
+    transition: background-color 0.2s ease, color 0,2s ease;
+}
+
+.linksnav a:hover{
+    background-color: rgb(255, 231, 163);
+    color: black;
+}
+
+.navextra a{
+    color: rgb(91.76% 90.2% 89.41%);
+    text-decoration: underline dotted;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: -120px;
+}
+
+.navextra a:hover{
+    color: rgb(255, 199, 38);
+    text-decoration: none;
+}
+
+.question{
+    margin-top: 65px;
+}
+
+.question a{
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.question p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-right: -150px;
+}
+
+.question h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -30px; 
+    line-height: 27px;
+    /* margin-bottom: 4px;  */
+}
+
+.question h2 a{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 231, 163);
+}
+
+.question h3 a{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    line-height: 24px;
+    letter-spacing: 1.08px;
+    padding-top: 5px;
+}
+
+.form{
+    background-color: rgb(47, 28, 28);
+    color: white;
+    margin-top: 50px;
+    margin-right: -100px;
+    height: 368px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.form h2{
+    background-color: rgb(47, 28, 28);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.36px;
+    padding: 20px 20px 10px 20px;
+}
+
+.details{
+    background-color: rgb(47, 28, 28);
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 400;
+    letter-spacing: -0.18px;
+    font-family: "JetBrains Mono", monospace;
+    padding: 10px 20px 20px 20px;
+}
+
+.details label{
+    background-color: rgb(47, 28, 28);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.email{
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    outline: none;
+    background: transparent;
+    width: 500px;
+    margin-right: 100px;
+}
+
+.details button{
+    border: none;
+    background-color: rgb(224, 49, 49);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.18px;
+    border-radius: 40px;
+    padding: 20px 60px 20px 60px;
+    margin: -70px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: background-color 0.2s ease, outline-color 0.2s ease;
+}
+
+.button:hover{
+    background-color: rgb(224, 49, 49);
+    outline-color: rgb(224, 49, 49);
+}
+
+.fields{
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: -100px;
+    margin-bottom: -20px;
+    padding: 10px 100px 28px 100px;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    align-items: center;
+}
+
+.direction{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 31px;
+    font-family: "JetBrains Mono", monospace;
+    text-align: left;
+    padding-left: 80px;
+    gap: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(255, 231, 163);
+    transition: color 0.2s ease;
+}
+
+.check-link:hover {
+    text-decoration: underline dotted;
+    color: rgb(255, 199, 38);
+}
+
+.wifi{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.check-link{
+    padding-right: 80px;
+}
+
+.arrow{
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.fields:hover .arrow {
+    transform: translateX(10px)
+}
+
+.design{
+    /* margin-right: -300px; */
+    margin-top: 80px;
+}
+
+.design-link {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-right: -200px; */
+    line-height: -0.36px;
+}
+
+.design p{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.5px;
+    margin-right: -30px;
+    margin-bottom: -2px;
+}
+
+.design span a{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design span time{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design-link1 a{
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.design2{
+    /* margin-right: -300px; */
+    margin-top: 65px;
+}
+
+.design2-link2 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-right: -200px; */
+    line-height: -0.36px;
+}
+
+.design2 p{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.5px;
+    margin-right: -30px;
+    margin-bottom: -2px;
+}
+
+.design2 span a{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design2 span time{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design2-link2 a{
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.design3{
+    /* margin-right: -300px; */
+    margin-top: 65px;
+}
+
+.design3-link3 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-right: -200px; */
+    line-height: -0.36px;
+}
+
+.design3 p{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.5px;
+    margin-right: -30px;
+    margin-bottom: -2px;
+}
+
+.design3 span a{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design3 span time{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design3-link3 a{
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.design4{
+    /* margin-right: -300px; */
+    margin-top: 65px;
+}
+
+.design4-link4 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-right: -200px; */
+    line-height: -0.36px;
+}
+
+.design4 p{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.5px;
+    margin-right: -30px;
+    margin-bottom: -2px;
+}
+
+.design4 span a{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design4 span time{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design4-link4 a{
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.design5{
+    /* margin-right: -300px; */
+    margin-top: 65px;
+}
+
+.design5-link5 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-right: -200px; */
+    line-height: -0.36px;
+}
+
+.design5 p{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.5px;
+    margin-right: -30px;
+    margin-bottom: -2px;
+}
+
+.design5 span a{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design5 span time{
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.design5-link5 a{
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.pages{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 33px;
+    gap: 4px;
+}
+
+.pages li{
+    display: inline-flex;
+}
+
+.pages a{
+    text-decoration: none;
+    text-decoration: underline dotted;
+    text-align: center;
+    padding-right: 10px;
+    color: white;
+    margin-top: 30px;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pages a:hover{
+    text-decoration:underline;
+    color: rgb(248, 192, 33);
+}
+
+.pointer{
+    font-weight: 300;
+}
+
+.hr-line{
+    border: none;
+    height: 2px;
+    margin: 60px 0px 60px 0px;
+    background-color: rgb(47,28,28);
+}
+
+.footer1{
+    display: flex;
+}
+
+.footerimg img{
+    height: 60;
+    width: 320px;
+}
+
+.footer1 ul{
+    list-style-type: none;
+}
+
+.footerlinks1 li{
+    font-size: 18px;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.footerlinks2 li{
+    font-size: 18px;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+
+.footerlinks1 a{
+    color: white;
+    text-decoration: underline dotted;
+    margin-left: 350px;
+    text-align: left;
+    padding-right: 100px;
+}
+
+.footerlinks2 a{
+    color: white;
+    text-decoration: underline dotted;
+    margin-right: 130px;
+    text-align: left;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+    color: rgb(248, 192, 33);
+}
+
+.footer2{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "PP Mori", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-info{
+    display: flex;
+    margin-top: 100px;
+    color: white;
+}
+
+.inc{
+padding-left: 20px;
+padding-right: 490px;
+}
+
+.number li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.number a{
+    color: white;
+    text-decoration: underline dotted;
+}
+
+.footnote{
+    display: flex;
+}
+
+.footnote p{
+    padding-left: 20px;
+    color: white;
+    display: inline;
+    margin-right: 185px;
+}
+
+.info2 li{
+    display: inline; 
+    padding-right: 15px;   
+}
+
+.info2 a{
+    text-decoration: underline dotted;
+    color: white;
+}
